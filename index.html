@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pomodoro Clock &ndash; The Odin Project</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Pomodoro Clock</h1>
+        <div class="container">
+            <div class="shape leaf-offset">
+                <div class="shape leaf"></div>
+            </div>
+            <div class="shape stem"></div>
+            <div class="display">
+                <div class="display-bound">
+                    <h3 class="status">work</h3>
+                    <p class="time">25:00</p>
+                </div>
+            </div>
+            <div class="shape shadow"></div>
+            <div class="control-panel">
+                <div class="row">
+                    <button class="status__button active" data-type="work">Work</button>
+                    <button class="status__button" data-type="break">Break</button>
+                </div>
+                <div class="row time__controls">
+                    <div class="time__group">
+                        <button class="time__button" data-type="work" data-adjust="-1">-</button>
+                        <div class="time__display" id="work">25</div>
+                        <button class="time__button" data-type="work" data-adjust="1">+</button>
+                    </div>
+                    <div class="time__group">
+                        <button class="time__button" data-type="break" data-adjust="-1">-</button>
+                        <div class="time__display" id="break">5</div>
+                        <button class="time__button" data-type="break" data-adjust="1">+</button>
+                    </div>
+                </div>
+                <div class="row player__controls">
+                    <button class="player__button toggle">►</button>
+                    <button class="player__button reset">&olarr;</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script type="text/javascript" src="javascript.js"></script>
+    </body>
+</html>
